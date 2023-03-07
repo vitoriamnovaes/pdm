@@ -37,12 +37,12 @@ public class MainActivity extends AppCompatActivity {
                 int n1 = Integer.parseInt(String.valueOf(n01.getText()));
                 int n2 = Integer.parseInt(String.valueOf(n02.getText()));
                 if(n1 <= n2) {
-                    int resut = n2 - n1 + 1;
+                    int resutado = n2 - n1 + 1;
 
-                    int numero1 = (int) (Math.random()  *resut) + n1;
+                    int num1 = (int) (Math.random()  *resutado) + n1;
 
 
-                    resultado.setText("Resultado dos números" + numero1);
+                    resultado.setText("Resultado dos números" + num1);
                 }else {
                     resultado.setText("Resultado dos números errado");
                 }
