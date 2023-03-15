@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        editText = findViewById(R.id.editTextTextPersonName);
+       // editText = findViewById(R.id.editTextTextPersonName);
         Log.d("metodocallback","onCreate");
     }
 
@@ -53,8 +53,8 @@ public class MainActivity extends AppCompatActivity {
     }
     public void iniciaActivity(View view){
         Intent i = new Intent(getApplicationContext(), imc.class);
-        String mensagem = editText.getText().toString();
-        i.putExtra("msg",mensagem);
+       // String mensagem = editText.getText().toString();
+        //i.putExtra("msg",mensagem);
         startActivity(i);
 
     }
