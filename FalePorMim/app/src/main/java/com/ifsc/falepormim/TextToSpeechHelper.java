@@ -3,7 +3,9 @@ package com.ifsc.falepormim;
 
 import android.content.Context;
         import android.speech.tts.TextToSpeech;
-        import java.util.Locale;
+import android.util.Log;
+
+import java.util.Locale;
 
 public class TextToSpeechHelper implements TextToSpeech.OnInitListener {
     private TextToSpeech tts;
@@ -24,6 +26,8 @@ public class TextToSpeechHelper implements TextToSpeech.OnInitListener {
         if (status == TextToSpeech.SUCCESS) {
             tts.setLanguage(Locale.getDefault());
             isReady = true;
+        }else{
+            Log.d("TTS", "Falha na inicialização do TTS");
         }
     }
 }
